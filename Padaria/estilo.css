@@ -1,0 +1,26 @@
+.fundo {
+    background-image: url(imagens/Fundo.png);
+
+}
+
+.font_barra {
+    font-size: 150%;
+    font-family: monospace;
+    font-weight: 800;
+    color: rgb(59, 59, 141);
+    background-color: rgb(217, 215, 241);
+}
+
+.color_sobre {
+    color: rgb(152, 152, 206);
+    background-color: white;
+}
+
+.color_text {
+    background-color: white;
+}
+
+.border_img{
+    border: 5px solid gray;
+    border-radius: 10px;
+}
