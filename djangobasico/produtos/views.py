@@ -2,10 +2,13 @@ from django.shortcuts import render
 
 # Create your views here.
 
-from django.http import HttpResponse
+def index(request):
 
-def pagina_produtos(request):
-    return HttpResponse('Página de produtos')
+    context = {
+        'nome': 'José Silva'
+    }
 
-def pagina_celulares(request):
-    return HttpResponse('Página de produtos celulares')
+    return render(request, 'index.html', context)
+
+def celulares(request):
+    return render(request, 'celulares.html')
