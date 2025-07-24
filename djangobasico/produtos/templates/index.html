@@ -27,9 +27,16 @@
             <td>R$ {{produto.preco}} </td>
         </tr>
         {% endfor %}
-
-        </tr>
-        </tbody>
+    </tbody>
     </table>
+
+        {% if idade < 12 %}
+            <p>Criança</p>
+        {% elif idade >= 12 and idade < 18 %}
+            <p>Adolescente</p>
+        {% else%}
+            <p>Adulto</p>
+        {% endif %}
+
 </body>
 </html>

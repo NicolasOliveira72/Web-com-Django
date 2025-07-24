@@ -6,6 +6,7 @@ def index(request):
 
     context = {
         'nome': 'José Silva',
+        'idade': 25,
         'produtos': [
             {'nome': 'notebook', 'preco': '1.200,00'},
             {'nome': 'celular', 'preco': '900,00'},
