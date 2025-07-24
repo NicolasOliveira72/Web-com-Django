@@ -7,34 +7,29 @@
 </head>
 <body>
 
-    <h1> Tabela de computadores</h1> 
-
-    <p>Nome: {{ nome }} </p>
-
     <table border="5">
+
+    <thead>
+
         <tr>
-            <td>
-                Computadores
-            </td>
-            <td>
-                Marca
-            </td>
-            <td>
-                valor
-            </td>
+            <th>Nome</th>
+            <th>preco</th>
         </tr>
+
+    </thead>
+
+    
+    <tbody>
+    
+        {% for produto in produtos %}
         <tr>
-                    <tr>
-            <td>
-                XXXX
-            </td>
-            <td>
-                XXXX
-            </td>
-            <td>
-                R$ XXXX
-            </td>
+            <td>{{produto.nome}}</td>
+            <td>R$ {{produto.preco}} </td>
         </tr>
+        {% endfor %}
+
+        </tr>
+        </tbody>
     </table>
 </body>
 </html>

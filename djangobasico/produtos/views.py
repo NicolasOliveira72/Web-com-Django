@@ -5,7 +5,12 @@ from django.shortcuts import render
 def index(request):
 
     context = {
-        'nome': 'José Silva'
+        'nome': 'José Silva',
+        'produtos': [
+            {'nome': 'notebook', 'preco': '1.200,00'},
+            {'nome': 'celular', 'preco': '900,00'},
+            {'nome': 'tablet', 'preco': '800,00'},
+        ]
     }
 
     return render(request, 'index.html', context)
