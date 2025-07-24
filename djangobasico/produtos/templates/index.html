@@ -1,42 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celulares</title>
-</head>
-<body>
+{% extends "base.html" %}%}
+{% block titulo %}Produtos{% endblock %}
 
-    <table border="5">
-
-    <thead>
-
-        <tr>
-            <th>Nome</th>
-            <th>preco</th>
-        </tr>
-
-    </thead>
-
-    
-    <tbody>
-    
-        {% for produto in produtos %}
-        <tr>
-            <td>{{produto.nome}}</td>
-            <td>R$ {{produto.preco}} </td>
-        </tr>
-        {% endfor %}
-    </tbody>
-    </table>
-
-        {% if idade < 12 %}
-            <p>Criança</p>
-        {% elif idade >= 12 and idade < 18 %}
-            <p>Adolescente</p>
-        {% else%}
-            <p>Adulto</p>
-        {% endif %}
-
-</body>
-</html>
+   {% block conteudo %}<h2>Lista de produtos</h2>
+    <ul>
+        <li>Celulares</li>
+        <li>Móveis</li>
+        <li>Eletrodoméstico</li>
+        <li>TV e Vídeo</li>
+    </ul> {% endblock %} 
